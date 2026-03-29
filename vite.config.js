@@ -14,7 +14,7 @@ export default defineConfig({
     host: true, // Listen on all local IPs
     proxy: {
       '/api': {
-        target: process.env.VITE_API_BASE_URL || 'https://bus-verification-system-backend.onrender.com',
+        target: process.env.VITE_API_BASE_URL || 'https://bus-verification-system-backend.onrender.com/api',
         changeOrigin: true
       }
     }
