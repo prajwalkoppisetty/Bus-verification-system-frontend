@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer base {
+
+    html,
+    body {
+        /* Premium pastel mesh-like gradient from the reference image */
+        @apply bg-gradient-to-br from-[#fdfbf2] via-[#fcf0f5] to-[#f4eafc] min-h-screen text-[#3e445b] bg-fixed;
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* IE/Edge */
+    }
+
+    /* Webkit-based browsers */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
